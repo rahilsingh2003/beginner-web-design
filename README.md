@@ -38,3 +38,9 @@ The tests I completed did not reveal any major issues. I recorded the results in
 ## Submission
 
 This project includes the HTML pages, CSS stylesheet, and architecture notes required for the Module 2 assignment.
+
+## Project Links
+
+**GitHub Repository:** https://github.com/rahilsingh2003/beginner-web-design
+
+**Published Website:** https://rahilsingh2003.github.io/beginner-web-design/
