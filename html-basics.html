@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn the basics of HTML, including headings, paragraphs, links, and images.">
+  <title>HTML Basics | Beginner's Guide to Web Design</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header and navigation -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+
+      <a class="site-brand" href="index.html">Beginner's Guide to Web Design</a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Home</a></li>
+          <li><a class="site-nav__link" href="html-basics.html" aria-current="page">HTML Basics</a></li>
+          <li><a class="site-nav__link" href="css-basics.html">CSS Basics</a></li>
+          <li><a class="site-nav__link" href="responsive-design.html">Responsive Design</a></li>
+          <li><a class="site-nav__link" href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main" class="container page-content">
+
+    <header class="page-intro">
+      <h1>HTML Basics</h1>
+      <p class="lead">
+        HTML is what gives a webpage its structure. Let's go over some
+        common HTML elements and see how they work.
+      </p>
+    </header>
+
+    <!-- Introduction to HTML -->
+    <section class="section split">
+
+      <div>
+        <h2>What Is HTML?</h2>
+        <p>
+          HTML stands for HyperText Markup Language. It tells the browser
+          what different parts of a webpage are, like headings,
+          paragraphs, links, and images.
+        </p>
+        <p>
+          HTML uses tags to organize content. Most elements have an
+          opening tag and a closing tag. CSS is then used to change
+          how those elements look.
+        </p>
+      </div>
+
+      <div class="diagram" role="img" aria-label="Diagram showing HTML headings, paragraphs, and links">
+        <p class="diagram__label">HTML Page Structure</p>
+        <div class="diagram__block">Heading: &lt;h1&gt;</div>
+        <div class="diagram__block diagram__block--large">Paragraph: &lt;p&gt;</div>
+        <div class="diagram__block">Link: &lt;a&gt;</div>
+      </div>
+
+    </section>
+
+    <!-- Common HTML elements -->
+    <section class="section">
+      <h2>Common HTML Elements</h2>
+
+      <div class="example-grid">
+
+        <article class="example-card">
+          <h3>Headings</h3>
+          <p>
+            Headings help organize a webpage into different sections.
+            HTML has six heading levels, from h1 to h6.
+          </p>
+          <pre class="code-example"><code>&lt;h1&gt;My First Page&lt;/h1&gt;
+&lt;h2&gt;About Me&lt;/h2&gt;</code></pre>
+        </article>
+
+        <article class="example-card">
+          <h3>Paragraphs</h3>
+          <p>
+            Paragraphs are used for regular text on a webpage.
+          </p>
+          <pre class="code-example"><code>&lt;p&gt;Hello, world!&lt;/p&gt;</code></pre>
+        </article>
+
+        <article class="example-card">
+          <h3>Links</h3>
+          <p>
+            Links let people move between pages or visit other websites.
+          </p>
+          <pre class="code-example"><code>&lt;a href="css-basics.html"&gt;Learn CSS&lt;/a&gt;</code></pre>
+        </article>
+
+        <article class="example-card">
+          <h3>Images</h3>
+          <p>
+            Images use the img tag. The alt attribute provides a text
+            description when the image needs one.
+          </p>
+          <pre class="code-example"><code>&lt;img src="cat.jpg" alt="A sleeping cat"&gt;</code></pre>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Basic HTML example -->
+    <section class="section split">
+
+      <div>
+        <h2>Basic HTML Document</h2>
+        <p>
+          Here's an example of a simple HTML page. The head section
+          contains information about the page, while the body contains
+          the content people actually see.
+        </p>
+
+        <aside class="callout">
+          <h3 class="callout__title">Try It Yourself</h3>
+          <p>
+            Copy this example into a new HTML file and open it
+            in your browser to see what happens.
+          </p>
+        </aside>
+      </div>
+
+      <pre class="code-example"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;p&gt;This is my first webpage.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    </section>
+
+    <!-- Links to other lessons -->
+    <section class="section">
+      <h2>Continue Learning</h2>
+
+      <div class="resource-list">
+
+        <article class="topic-card">
+          <h3 class="topic-card__title">CSS Basics</h3>
+          <p>Learn how to add colors, fonts, and layouts to a webpage.</p>
+          <a class="topic-card__link" href="css-basics.html">Learn CSS</a>
+        </article>
+
+        <article class="topic-card">
+          <h3 class="topic-card__title">Responsive Design</h3>
+          <p>Learn how websites adjust to different screen sizes.</p>
+          <a class="topic-card__link" href="responsive-design.html">Learn Responsive Design</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p><strong>Beginner's Guide to Web Design</strong></p>
+      <p>A simple learning website about HTML, CSS, responsive design, and accessibility.</p>
+      <p class="print-only">Printed from Beginner's Guide to Web Design</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+

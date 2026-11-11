@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn the basics of CSS, including colors, fonts, spacing, and page layouts.">
+  <title>CSS Basics | Beginner's Guide to Web Design</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header and navigation -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+
+      <a class="site-brand" href="index.html">Beginner's Guide to Web Design</a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Home</a></li>
+          <li><a class="site-nav__link" href="html-basics.html">HTML Basics</a></li>
+          <li><a class="site-nav__link" href="css-basics.html" aria-current="page">CSS Basics</a></li>
+          <li><a class="site-nav__link" href="responsive-design.html">Responsive Design</a></li>
+          <li><a class="site-nav__link" href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main" class="container page-content">
+
+    <header class="page-intro">
+      <h1>CSS Basics</h1>
+      <p class="lead">
+        CSS is what makes a website look the way it does.
+        It controls things like colors, fonts, spacing, and layouts.
+      </p>
+    </header>
+
+    <!-- Introduction to CSS -->
+    <section class="section split">
+
+      <div>
+        <h2>What Is CSS?</h2>
+        <p>
+          CSS stands for Cascading Style Sheets.
+          It works with HTML to change how a webpage looks.
+        </p>
+        <p>
+          CSS uses selectors to choose which HTML elements to style.
+          Then, properties and values tell the browser what to change.
+        </p>
+      </div>
+
+      <pre class="code-example"><code>h1 {
+  color: blue;
+  font-size: 2rem;
+}</code></pre>
+
+    </section>
+
+    <!-- Common CSS properties -->
+    <section class="section">
+      <h2>Common CSS Properties</h2>
+
+      <div class="example-grid">
+
+        <article class="example-card">
+          <h3>Colors</h3>
+          <p>CSS lets you change the color of text and other elements.</p>
+          <pre class="code-example"><code>p {
+  color: blue;
+}</code></pre>
+        </article>
+
+        <article class="example-card">
+          <h3>Fonts</h3>
+          <p>You can change the font and size of your text.</p>
+          <pre class="code-example"><code>body {
+  font-family: Arial;
+}</code></pre>
+        </article>
+
+        <article class="example-card">
+          <h3>Spacing</h3>
+          <p>Margin and padding help create space between elements.</p>
+          <pre class="code-example"><code>.card {
+  padding: 1rem;
+}</code></pre>
+        </article>
+
+        <article class="example-card">
+          <h3>Backgrounds</h3>
+          <p>Background colors can help separate different sections.</p>
+          <pre class="code-example"><code>.card {
+  background: lightgray;
+}</code></pre>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Flexbox and Grid -->
+    <section class="section split">
+
+      <div>
+        <h2>Flexbox and Grid</h2>
+        <p>
+          Flexbox and CSS Grid are two ways to organize content on a webpage.
+          Flexbox is useful for arranging items in a row or column.
+          Grid is helpful when you want to create layouts with rows and columns.
+        </p>
+
+        <aside class="callout">
+          <h3 class="callout__title">How I'm Using CSS</h3>
+          <p>
+            For this website, I'm using shared CSS classes and variables
+            so I don't have to repeat the same styles on every page.
+          </p>
+        </aside>
+      </div>
+
+      <pre class="code-example"><code>.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}</code></pre>
+
+    </section>
+
+    <!-- Links to other lessons -->
+    <section class="section">
+      <h2>Continue Learning</h2>
+
+      <div class="resource-list">
+
+        <article class="topic-card">
+          <h3 class="topic-card__title">Responsive Design</h3>
+          <p>Learn how websites adjust to different screen sizes.</p>
+          <a class="topic-card__link" href="responsive-design.html">Learn More</a>
+        </article>
+
+        <article class="topic-card">
+          <h3 class="topic-card__title">Accessibility</h3>
+          <p>Learn how to make websites easier for everyone to use.</p>
+          <a class="topic-card__link" href="accessibility.html">Learn More</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p><strong>Beginner's Guide to Web Design</strong></p>
+      <p>A simple website about HTML, CSS, responsive design, and accessibility.</p>
+      <p class="print-only">Printed from Beginner's Guide to Web Design</p>
+    </div>
+  </footer>
+
+</body>
+</html>

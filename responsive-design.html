@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how responsive websites adjust to different screen sizes using CSS.">
+  <title>Responsive Design | Beginner's Guide to Web Design</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header and navigation -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+
+      <a class="site-brand" href="index.html">Beginner's Guide to Web Design</a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Home</a></li>
+          <li><a class="site-nav__link" href="html-basics.html">HTML Basics</a></li>
+          <li><a class="site-nav__link" href="css-basics.html">CSS Basics</a></li>
+          <li><a class="site-nav__link" href="responsive-design.html" aria-current="page">Responsive Design</a></li>
+          <li><a class="site-nav__link" href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main" class="container page-content">
+
+    <!-- Page introduction -->
+    <header class="page-intro">
+      <h1>Responsive Design</h1>
+      <p class="lead">
+        Responsive design helps websites work on different screen sizes.
+        By using flexible layouts, images, and CSS, a website can adjust
+        to phones, tablets, and desktop computers.
+      </p>
+    </header>
+
+    <!-- Why responsive design matters -->
+    <section class="section split">
+      <div>
+        <h2>Why Responsive Design Matters</h2>
+        <p>
+          People use all kinds of devices to browse websites.
+          A website that looks good on a computer might be difficult
+          to use on a smaller phone screen.
+        </p>
+        <p>
+          Responsive design helps fix this by adjusting the layout
+          so the content stays readable and easy to navigate.
+        </p>
+      </div>
+
+      <div class="diagram" role="img" aria-label="Comparison of a narrow and wide website layout">
+        <p class="diagram__label">Narrow vs. Wide Layout</p>
+
+        <div class="comparison">
+          <div class="comparison__mobile">
+            <span>A</span>
+            <span>B</span>
+          </div>
+
+          <div class="comparison__wide">
+            <span>A</span>
+            <span>B</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Different screen sizes -->
+    <section class="section">
+      <h2>How Layouts Change Across Devices</h2>
+      <p>
+        On smaller screens, content usually stacks into one column.
+        As the screen gets wider, we can add more columns to use
+        the available space.
+      </p>
+
+      <div class="device-grid">
+
+        <article class="device-card">
+          <h3>Mobile</h3>
+          <div class="mini-grid mini-grid--mobile" aria-label="One column layout">
+            <span>A</span>
+            <span>B</span>
+            <span>C</span>
+          </div>
+          <p>One column with stacked content.</p>
+        </article>
+
+        <article class="device-card">
+          <h3>Tablet</h3>
+          <div class="mini-grid mini-grid--tablet" aria-label="Two column layout">
+            <span>A</span>
+            <span>B</span>
+            <span>C</span>
+          </div>
+          <p>Two columns when there is more room.</p>
+        </article>
+
+        <article class="device-card">
+          <h3>Desktop</h3>
+          <div class="mini-grid mini-grid--desktop" aria-label="Three column layout">
+            <span>A</span>
+            <span>B</span>
+            <span>C</span>
+          </div>
+          <p>Three columns on larger screens.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CSS media queries -->
+    <section class="section split">
+      <div>
+        <h2>Basic CSS Media Queries</h2>
+        <p>
+          Media queries let us change CSS styles depending on
+          the screen size.
+        </p>
+        <p>
+          In this example, the cards start in one column.
+          At 768px they change to two columns, and at
+          1200px they change to three.
+        </p>
+      </div>
+
+      <pre class="code-example"><code>.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}</code></pre>
+    </section>
+
+    <!-- Flexible images -->
+    <section class="section split">
+      <div>
+        <h2>Flexible Images</h2>
+        <p>
+          Images should also adjust to different screen sizes.
+          Using max-width: 100% helps prevent an image from
+          stretching outside its container.
+        </p>
+
+        <pre class="code-example"><code>img {
+  max-width: 100%;
+  height: auto;
+}</code></pre>
+      </div>
+
+      <div class="diagram" role="img" aria-label="Images displayed at different widths">
+        <p class="diagram__label">Flexible Image Example</p>
+
+        <div class="image-scaling">
+          <div>Image</div>
+          <div>Image</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related pages -->
+    <section class="section">
+      <h2>Continue Learning</h2>
+
+      <div class="resource-list">
+
+        <article class="topic-card">
+          <h3 class="topic-card__title">HTML Basics</h3>
+          <p>Learn how HTML organizes website content.</p>
+          <a class="topic-card__link" href="html-basics.html">Learn HTML</a>
+        </article>
+
+        <article class="topic-card">
+          <h3 class="topic-card__title">CSS Basics</h3>
+          <p>Learn how CSS changes the appearance of a website.</p>
+          <a class="topic-card__link" href="css-basics.html">Learn CSS</a>
+        </article>
+
+        <article class="topic-card">
+          <h3 class="topic-card__title">Accessibility</h3>
+          <p>Learn how to make websites easier for everyone to use.</p>
+          <a class="topic-card__link" href="accessibility.html">Learn Accessibility</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p><strong>Beginner's Guide to Web Design</strong></p>
+      <p>A beginner-friendly website about HTML, CSS, responsive design, and accessibility.</p>
+      <p class="print-only">Beginner's Guide to Web Design - Printed Reference</p>
+    </div>
+  </footer>
+
+</body>
+</html>

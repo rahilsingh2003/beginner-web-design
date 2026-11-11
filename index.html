@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beginner's guide to learning HTML, CSS, responsive design, and accessibility.">
+  <title>Home | Beginner's Guide to Web Design</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Website header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+
+      <a class="site-brand" href="index.html">Beginner's Guide to Web Design</a>
+
+      <!-- Main navigation -->
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html" aria-current="page">Home</a></li>
+          <li><a class="site-nav__link" href="html-basics.html">HTML Basics</a></li>
+          <li><a class="site-nav__link" href="css-basics.html">CSS Basics</a></li>
+          <li><a class="site-nav__link" href="responsive-design.html">Responsive Design</a></li>
+          <li><a class="site-nav__link" href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Main page content -->
+  <main id="main" class="container page-content">
+
+    <!-- Introduction -->
+    <section class="hero">
+
+      <div class="hero__copy">
+        <h1>Welcome to Beginner's Guide to Web Design</h1>
+
+        <p class="lead">
+          New to web design? This website covers the basics of HTML,
+          CSS, responsive design, and accessibility. Each section
+          explains a different topic with simple examples.
+        </p>
+
+        <a class="button" href="html-basics.html">Start Learning HTML</a>
+      </div>
+
+      <!-- Simple webpage diagram -->
+      <div class="diagram" role="img" aria-label="Example webpage layout showing a header, main content, and footer">
+        <p class="diagram__label">Parts of a Webpage</p>
+        <div class="diagram__block">Header and Navigation</div>
+        <div class="diagram__block diagram__block--large">Main Content</div>
+        <div class="diagram__block">Footer</div>
+      </div>
+
+    </section>
+
+    <!-- Learning topics -->
+    <section class="section" aria-labelledby="topics-heading">
+
+      <h2 id="topics-heading">Explore the Topics</h2>
+
+      <div class="topic-grid">
+
+        <article class="topic-card">
+          <h3 class="topic-card__title">HTML Basics</h3>
+          <p>Learn how HTML is used to structure webpages.</p>
+          <a class="topic-card__link" href="html-basics.html">Learn HTML</a>
+        </article>
+
+        <article class="topic-card">
+          <h3 class="topic-card__title">CSS Basics</h3>
+          <p>Learn how CSS controls colors, fonts, and layouts.</p>
+          <a class="topic-card__link" href="css-basics.html">Learn CSS</a>
+        </article>
+
+        <article class="topic-card">
+          <h3 class="topic-card__title">Responsive Design</h3>
+          <p>Learn how websites adjust to different screen sizes.</p>
+          <a class="topic-card__link" href="responsive-design.html">Learn Responsive Design</a>
+        </article>
+
+        <article class="topic-card">
+          <h3 class="topic-card__title">Accessibility</h3>
+          <p>Learn how to make websites easier for everyone to use.</p>
+          <a class="topic-card__link" href="accessibility.html">Learn Accessibility</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Website footer -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+
+      <p><strong>Beginner's Guide to Web Design</strong></p>
+      <p>A simple learning website about HTML, CSS, responsive design, and accessibility.</p>
+      <p class="print-only">Beginner's Guide to Web Design - Printed Version</p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
